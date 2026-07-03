@@ -88,6 +88,7 @@ These files are ignored by Git through `context/`.
 - `context/DATASETS.md`: current data source notes.
 - `context/RISKS.md`: modeling, data, engineering, and paper risks.
 - `context/INTERFACES.md`: pipeline-to-frontend data contracts.
+- `context/DASHBOARD_VISUAL_RESEARCH.md`: visual/interaction research for upcoming dashboard work.
 - `context/structure.md`: artifact index and repo map.
 - `context/FINDINGS.md`: empirical findings log.
 

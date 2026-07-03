@@ -185,3 +185,4 @@ See `ASSUMPTIONS.md` for all modeling and data assumptions.
 - Update `context/STATUS.md` when work is done.
 - The frontend (`app/`) and the pipeline (`src/` + `scripts/`) are separate concerns.
   Do not mix them.
+- Commit messages should match the existing project style. Commit only as Sardor; never add AI/co-author trailers.

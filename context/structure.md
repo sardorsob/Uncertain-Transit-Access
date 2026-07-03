@@ -26,6 +26,7 @@ BayesTransitEquity/
 │   ├── STATUS.md                     Current state, what's next
 │   ├── RISKS.md                      Known risks + mitigations
 │   ├── PAPER.md                      Paper argument + figure plan
+│   ├── DASHBOARD_VISUAL_RESEARCH.md  Design research patterns for dashboard changes
 │   └── FINDINGS.md                   Empirical results log with interpretation (updated each notebook run)
 │
 ├── configs/

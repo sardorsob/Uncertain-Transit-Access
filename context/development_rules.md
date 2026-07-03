@@ -40,6 +40,7 @@ If this file conflicts with any other doc, **this file wins** unless `DECISIONS.
    - Every meaningful change must update logs (DECISIONS / ASSUMPTIONS / STATUS).
    - Avoid silent changes that break continuity across sessions.
    - Always read `context/AGENT.md` at the start of a new session.
+   - Commits must follow the project's existing commit naming style and must be authored only as Sardor. Never add AI/co-author trailers.
 
 6. **Config-driven geography**
    - No city, bounding box, or agency ID is hardcoded anywhere in `src/` or `scripts/`.
