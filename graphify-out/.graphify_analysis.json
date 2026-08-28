@@ -1,0 +1,718 @@
+{
+  "communities": {
+    "0": [
+      "app_src_app_homeclient",
+      "app_src_app_homeclient_dashboard",
+      "app_src_app_homeclient_homeclient",
+      "app_src_app_page",
+      "app_src_app_page_home",
+      "app_src_components_charts_exceedancehistogram",
+      "app_src_components_charts_exceedancehistogram_bin",
+      "app_src_components_charts_exceedancehistogram_bincolor",
+      "app_src_components_charts_exceedancehistogram_exceedancehistogram",
+      "app_src_components_charts_exceedancehistogram_props",
+      "app_src_components_dashboard",
+      "app_src_components_dashboard_dashboard",
+      "app_src_components_dashboard_zfill11",
+      "app_src_components_map_mapattribution",
+      "app_src_components_map_mapattribution_mapattribution",
+      "app_src_components_map_maplegend",
+      "app_src_components_map_maplegend_gradients",
+      "app_src_components_map_maplegend_labels",
+      "app_src_components_map_maplegend_maplegend",
+      "app_src_components_map_maplegend_ticks",
+      "app_src_components_shared_infomodal",
+      "app_src_components_shared_infomodal_infomodal",
+      "app_src_components_shared_loadingspinner",
+      "app_src_components_shared_loadingspinner_loadingspinner",
+      "app_src_components_shared_statcard",
+      "app_src_components_shared_statcard_statcard",
+      "app_src_components_sidebar_controlsidebar",
+      "app_src_components_sidebar_controlsidebar_controlsidebar",
+      "app_src_components_sidebar_controlsidebar_layers",
+      "app_src_components_sidebar_controlsidebar_props",
+      "app_src_hooks_usecountystats",
+      "app_src_hooks_usecountystats_buildbins",
+      "app_src_hooks_usecountystats_usecountystats",
+      "app_src_hooks_usegeodata",
+      "app_src_hooks_usegeodata_buildlookup",
+      "app_src_hooks_usegeodata_geodatastate",
+      "app_src_hooks_usegeodata_geofc",
+      "app_src_hooks_usegeodata_usegeodata",
+      "app_src_hooks_usegeodata_usegeodata_loadbase",
+      "app_src_types_index",
+      "app_src_types_index_appstate",
+      "app_src_types_index_countysummary",
+      "app_src_types_index_layermetric",
+      "app_src_types_index_metadata",
+      "app_src_types_index_neighborcurve",
+      "app_src_types_index_scenariofeature",
+      "app_src_types_index_scenariometa",
+      "app_src_types_index_tractfeature"
+    ],
+    "1": [
+      "app_src_components_charts_densityconfoundscatter",
+      "app_src_components_charts_densityconfoundscatter_densityconfoundscatter",
+      "app_src_components_charts_densityconfoundscatter_m",
+      "app_src_components_charts_densityconfoundscatter_props",
+      "app_src_components_charts_densityconfoundscatter_q_colors",
+      "app_src_components_shared_badge",
+      "app_src_components_shared_badge_badge",
+      "app_src_components_shared_badge_tone",
+      "app_src_components_shared_badge_tones",
+      "app_src_components_tractpanel_narrativecard",
+      "app_src_components_tractpanel_narrativecard_narrativecard",
+      "app_src_components_tractpanel_narrativecard_props",
+      "app_src_components_tractpanel_neighborjsdbars",
+      "app_src_components_tractpanel_neighborjsdbars_neighborjsdbars",
+      "app_src_components_tractpanel_neighborjsdbars_neighborjsdrow",
+      "app_src_components_tractpanel_neighborjsdbars_props",
+      "app_src_components_tractpanel_rankbar",
+      "app_src_components_tractpanel_rankbar_exceedancepercentile",
+      "app_src_components_tractpanel_rankbar_props",
+      "app_src_components_tractpanel_rankbar_rankbar",
+      "app_src_components_tractpanel_tractpanel",
+      "app_src_components_tractpanel_tractpanel_props",
+      "app_src_components_tractpanel_tractpanel_tractpanel",
+      "app_src_hooks_usecountystats_countystats",
+      "app_src_lib_distances",
+      "app_src_lib_distances_hellingergaussian",
+      "app_src_lib_distances_jsdgaussian",
+      "app_src_lib_distances_jsdlabel",
+      "app_src_lib_distances_normalpdf",
+      "app_src_lib_distances_rationale_10",
+      "app_src_lib_distances_w2gaussian",
+      "app_src_lib_formatters",
+      "app_src_lib_formatters_deltaindicator",
+      "app_src_lib_formatters_fmtincome",
+      "app_src_lib_formatters_fmtpct",
+      "app_src_lib_formatters_fmtpct2",
+      "app_src_lib_formatters_fmtpop",
+      "app_src_lib_formatters_fmtwass",
+      "app_src_lib_formatters_quartilelabel",
+      "app_src_lib_formatters_shorttractname",
+      "app_src_types_index_geomode",
+      "app_src_types_index_scenarioproperties",
+      "app_src_types_index_tractproperties"
+    ],
+    "2": [
+      "app_package_dependencies",
+      "app_package_dependencies_d3_array",
+      "app_package_dependencies_d3_scale",
+      "app_package_dependencies_d3_scale_chromatic",
+      "app_package_dependencies_deck_gl_core",
+      "app_package_dependencies_deck_gl_layers",
+      "app_package_dependencies_deck_gl_react",
+      "app_package_dependencies_framer_motion",
+      "app_package_dependencies_lucide_react",
+      "app_package_dependencies_maplibre_gl",
+      "app_package_dependencies_next",
+      "app_package_dependencies_react",
+      "app_package_dependencies_react_dom",
+      "app_package_dependencies_react_map_gl",
+      "app_package_dependencies_visx_axis",
+      "app_package_dependencies_visx_curve",
+      "app_package_dependencies_visx_scale",
+      "app_package_dependencies_visx_shape",
+      "d3_array",
+      "d3_scale",
+      "d3_scale_chromatic",
+      "deck_gl_core",
+      "deck_gl_layers",
+      "deck_gl_react",
+      "framer_motion",
+      "lucide_react",
+      "maplibre_gl",
+      "next",
+      "react",
+      "react_dom",
+      "react_map_gl",
+      "visx_axis",
+      "visx_curve",
+      "visx_scale",
+      "visx_shape"
+    ],
+    "3": [
+      "app_package",
+      "app_package_devdependencies",
+      "app_package_devdependencies_autoprefixer",
+      "app_package_devdependencies_eslint",
+      "app_package_devdependencies_eslint_config_next",
+      "app_package_devdependencies_postcss",
+      "app_package_devdependencies_tailwindcss",
+      "app_package_devdependencies_types_d3_array",
+      "app_package_devdependencies_types_d3_scale",
+      "app_package_devdependencies_types_d3_scale_chromatic",
+      "app_package_devdependencies_types_node",
+      "app_package_devdependencies_types_react",
+      "app_package_devdependencies_types_react_dom",
+      "app_package_devdependencies_typescript",
+      "app_package_name",
+      "app_package_private",
+      "app_package_scripts",
+      "app_package_scripts_build",
+      "app_package_scripts_dev",
+      "app_package_scripts_lint",
+      "app_package_scripts_start",
+      "app_package_version",
+      "autoprefixer",
+      "eslint",
+      "eslint_config_next",
+      "postcss",
+      "tailwindcss",
+      "types_d3_array",
+      "types_d3_scale",
+      "types_d3_scale_chromatic",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript"
+    ],
+    "4": [
+      "scripts_download_data",
+      "scripts_download_data_configure_osmnx",
+      "scripts_download_data_download_census",
+      "scripts_download_data_download_file",
+      "scripts_download_data_download_gtfs",
+      "scripts_download_data_download_lodes",
+      "scripts_download_data_download_osm",
+      "scripts_download_data_download_osm_pbf_for_r5",
+      "scripts_download_data_ensure_mobility_feeds_csv",
+      "scripts_download_data_extract_zip",
+      "scripts_download_data_load_configs",
+      "scripts_download_data_main",
+      "scripts_download_data_md5",
+      "scripts_download_data_mobility_catalog_settings",
+      "scripts_download_data_pick_gtfs_download_url",
+      "scripts_download_data_py_path",
+      "scripts_download_data_rationale_124",
+      "scripts_download_data_rationale_142",
+      "scripts_download_data_rationale_163",
+      "scripts_download_data_rationale_177",
+      "scripts_download_data_rationale_194",
+      "scripts_download_data_rationale_265",
+      "scripts_download_data_rationale_284",
+      "scripts_download_data_rationale_362",
+      "scripts_download_data_rationale_434",
+      "scripts_download_data_rationale_450",
+      "scripts_download_data_rationale_532",
+      "scripts_download_data_rationale_54",
+      "scripts_download_data_rationale_565",
+      "scripts_download_data_rationale_775",
+      "scripts_download_data_resolve_gtfs_urls_from_mobility_catalog",
+      "scripts_download_data_write_manifest"
+    ],
+    "5": [
+      "scripts_extract_osm_pbf",
+      "scripts_extract_osm_pbf_main",
+      "src_utils_config",
+      "src_utils_config_artifact_run_id",
+      "src_utils_config_deep_merge",
+      "src_utils_config_legacy_stems_for_semantic",
+      "src_utils_config_load_merged_config",
+      "src_utils_config_netcdf_file_is_readable",
+      "src_utils_config_pipeline_run_id",
+      "src_utils_config_py_path",
+      "src_utils_config_rationale_44",
+      "src_utils_config_rationale_52",
+      "src_utils_config_rationale_64",
+      "src_utils_config_rationale_69",
+      "src_utils_config_rationale_95",
+      "src_utils_config_resolve_posterior_idata_nc",
+      "src_utils_init",
+      "src_utils_paths",
+      "src_utils_paths_artifact_tables_eda",
+      "src_utils_paths_artifact_tables_pipeline",
+      "src_utils_paths_artifact_tables_root",
+      "src_utils_paths_find_osmium_executable",
+      "src_utils_paths_find_repo_root",
+      "src_utils_paths_py_path",
+      "src_utils_paths_rationale_1",
+      "src_utils_paths_rationale_108",
+      "src_utils_paths_rationale_11",
+      "src_utils_paths_rationale_22",
+      "src_utils_paths_rationale_27",
+      "src_utils_paths_rationale_32",
+      "src_utils_paths_rationale_37",
+      "src_utils_paths_safe_osmium_path"
+    ],
+    "6": [
+      "app_tsconfig",
+      "app_tsconfig_compileroptions",
+      "app_tsconfig_compileroptions_allowjs",
+      "app_tsconfig_compileroptions_esmoduleinterop",
+      "app_tsconfig_compileroptions_incremental",
+      "app_tsconfig_compileroptions_isolatedmodules",
+      "app_tsconfig_compileroptions_jsx",
+      "app_tsconfig_compileroptions_lib",
+      "app_tsconfig_compileroptions_module",
+      "app_tsconfig_compileroptions_moduleresolution",
+      "app_tsconfig_compileroptions_noemit",
+      "app_tsconfig_compileroptions_paths",
+      "app_tsconfig_compileroptions_plugins",
+      "app_tsconfig_compileroptions_resolvejsonmodule",
+      "app_tsconfig_compileroptions_skiplibcheck",
+      "app_tsconfig_compileroptions_strict",
+      "app_tsconfig_compileroptions_target",
+      "app_tsconfig_exclude",
+      "app_tsconfig_include",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_node_modules",
+      "ref_ts",
+      "ref_tsx"
+    ],
+    "7": [
+      "model",
+      "src_modeling_init",
+      "src_modeling_spatial",
+      "src_modeling_spatial_adjacency_from_queen",
+      "src_modeling_spatial_connect_islands_to_nearest",
+      "src_modeling_spatial_id_order_to_geoids_and_geoms",
+      "src_modeling_spatial_py_geodataframe",
+      "src_modeling_spatial_py_ndarray",
+      "src_modeling_spatial_rationale_1",
+      "src_modeling_spatial_rationale_109",
+      "src_modeling_spatial_rationale_128",
+      "src_modeling_spatial_rationale_167",
+      "src_modeling_spatial_rationale_30",
+      "src_modeling_spatial_rationale_77",
+      "src_modeling_spatial_scaling_factor_sp",
+      "src_modeling_spatial_spatial_graph_diagnostics",
+      "src_modeling_tract_bym",
+      "src_modeling_tract_bym_build_icar_prior",
+      "src_modeling_tract_bym_build_tract_bym_normal",
+      "src_modeling_tract_bym_posterior_summary",
+      "src_modeling_tract_bym_py_ndarray",
+      "src_modeling_tract_bym_rationale_1",
+      "src_modeling_tract_bym_rationale_103",
+      "src_modeling_tract_bym_rationale_253",
+      "src_modeling_tract_bym_rationale_47",
+      "tensorvariable"
+    ],
+    "8": [
+      "any",
+      "inferencedata",
+      "scripts_nb04_export_diagnostics",
+      "scripts_nb04_export_diagnostics_convergence_assessment",
+      "scripts_nb04_export_diagnostics_count_divergences",
+      "scripts_nb04_export_diagnostics_diagnostic_var_names",
+      "scripts_nb04_export_diagnostics_find_latest_idata",
+      "scripts_nb04_export_diagnostics_load_config",
+      "scripts_nb04_export_diagnostics_main",
+      "scripts_nb04_export_diagnostics_optional_equity_bridge",
+      "scripts_nb04_export_diagnostics_package_versions",
+      "scripts_nb04_export_diagnostics_plot_diagnostics_figures",
+      "scripts_nb04_export_diagnostics_py_dataframe",
+      "scripts_nb04_export_diagnostics_py_path",
+      "scripts_nb04_export_diagnostics_rationale_173",
+      "scripts_nb04_export_diagnostics_rationale_187",
+      "scripts_nb04_export_diagnostics_rationale_334",
+      "scripts_nb04_export_diagnostics_rationale_90",
+      "scripts_nb04_export_diagnostics_rel_under_repo",
+      "scripts_nb04_export_diagnostics_sampling_dimensions",
+      "scripts_nb04_export_diagnostics_try_git_sha",
+      "scripts_nb04_export_diagnostics_write_parameter_table",
+      "scripts_nb04_export_diagnostics_write_recommendations",
+      "scripts_nb04_export_diagnostics_write_run_manifest",
+      "scripts_nb04_export_diagnostics_write_sampling_meta"
+    ],
+    "9": [
+      "app_src_components_tractpanel_interventiondiff",
+      "app_src_components_tractpanel_interventiondiff_interventiondiff",
+      "app_src_components_tractpanel_interventiondiff_m",
+      "app_src_components_tractpanel_interventiondiff_props",
+      "app_src_components_tractpanel_neighborcomparisonplot",
+      "app_src_components_tractpanel_neighborcomparisonplot_m",
+      "app_src_components_tractpanel_neighborcomparisonplot_neighborcomparisonplot",
+      "app_src_components_tractpanel_neighborcomparisonplot_neighborcurvespec",
+      "app_src_components_tractpanel_neighborcomparisonplot_props",
+      "app_src_components_tractpanel_posteriorplot",
+      "app_src_components_tractpanel_posteriorplot_m",
+      "app_src_components_tractpanel_posteriorplot_posteriorplot",
+      "app_src_components_tractpanel_posteriorplot_props",
+      "app_src_lib_formatters_fmtjobs",
+      "app_src_lib_kde",
+      "app_src_lib_kde_computekde",
+      "app_src_lib_kde_credibleintervals",
+      "app_src_lib_kde_erf",
+      "app_src_lib_kde_meanimplyingexceedance",
+      "app_src_lib_kde_normalcdf",
+      "app_src_lib_kde_normalpdf",
+      "app_src_lib_kde_quantilestandardnormal",
+      "app_src_types_index_kdepoint"
+    ],
+    "10": [
+      "app_src_components_map_transitmap",
+      "app_src_components_map_transitmap_desertprobfortooltip",
+      "app_src_components_map_transitmap_osm_style",
+      "app_src_components_map_transitmap_pickmetricvalue",
+      "app_src_components_map_transitmap_props",
+      "app_src_components_map_transitmap_transitmap",
+      "app_src_lib_colorscales",
+      "app_src_lib_colorscales_crossed_line",
+      "app_src_lib_colorscales_delta_stops",
+      "app_src_lib_colorscales_desert_stops",
+      "app_src_lib_colorscales_getcolor",
+      "app_src_lib_colorscales_interpolate",
+      "app_src_lib_colorscales_lerp",
+      "app_src_lib_colorscales_mean_stops",
+      "app_src_lib_colorscales_neighbor_colors",
+      "app_src_lib_colorscales_selected_line",
+      "app_src_lib_colorscales_target_line",
+      "app_src_lib_colorscales_wass_stops"
+    ],
+    "11": [
+      "src_utils_gtfs_r5",
+      "src_utils_gtfs_r5_collapse_feed_info_dataframe",
+      "src_utils_gtfs_r5_ensure_single_feed_info_in_gtfs_zip",
+      "src_utils_gtfs_r5_py_dataframe",
+      "src_utils_gtfs_r5_py_path",
+      "src_utils_gtfs_r5_r5py_cache_dir",
+      "src_utils_gtfs_r5_rationale_1",
+      "src_utils_gtfs_r5_rationale_119",
+      "src_utils_gtfs_r5_rationale_135",
+      "src_utils_gtfs_r5_rationale_21",
+      "src_utils_gtfs_r5_rationale_88",
+      "src_utils_gtfs_r5_refresh_r5py_gtfs_cache_copy"
+    ],
+    "12": [
+      "scripts_export_frontend",
+      "scripts_export_frontend_find_repo_root",
+      "scripts_export_frontend_neighbors_geopandas_touches",
+      "scripts_export_frontend_py_geodataframe",
+      "scripts_export_frontend_py_path",
+      "scripts_export_frontend_rationale_1",
+      "scripts_export_frontend_rationale_145",
+      "scripts_export_frontend_z"
+    ],
+    "13": [
+      "app_src_app_layout",
+      "app_src_app_layout_inter",
+      "app_src_app_layout_metadata",
+      "app_src_app_layout_mono",
+      "app_src_app_layout_rootlayout"
+    ],
+    "14": [
+      "app_next_config",
+      "app_next_config_nextconfig"
+    ],
+    "15": [
+      "app_next_env_d",
+      "app_next_env_d_rationale_6"
+    ],
+    "16": [
+      "app_src_app_not_found",
+      "app_src_app_not_found_notfound"
+    ],
+    "17": [
+      "app_tailwind_config",
+      "app_tailwind_config_config"
+    ],
+    "18": [
+      "app_postcss_config"
+    ],
+    "19": [
+      "scripts_run_model"
+    ],
+    "20": [
+      "scripts_run_pipeline"
+    ],
+    "21": [
+      "src_accessibility_cumulative"
+    ],
+    "22": [
+      "src_accessibility_gravity"
+    ],
+    "23": [
+      "src_accessibility_init"
+    ],
+    "24": [
+      "src_accessibility_r5"
+    ],
+    "25": [
+      "src_evaluation_convergence"
+    ],
+    "26": [
+      "src_evaluation_init"
+    ],
+    "27": [
+      "src_evaluation_validation"
+    ],
+    "28": [
+      "src_init"
+    ],
+    "29": [
+      "src_io_census"
+    ],
+    "30": [
+      "src_io_gtfs"
+    ],
+    "31": [
+      "src_io_init"
+    ],
+    "32": [
+      "src_io_osm"
+    ],
+    "33": [
+      "src_metrics_divergence"
+    ],
+    "34": [
+      "src_metrics_entropy"
+    ],
+    "35": [
+      "src_metrics_equity"
+    ],
+    "36": [
+      "src_metrics_init"
+    ],
+    "37": [
+      "src_modeling_intervention"
+    ],
+    "38": [
+      "src_modeling_transit_desert"
+    ],
+    "39": [
+      "src_preprocessing_gtfs_clean"
+    ],
+    "40": [
+      "src_preprocessing_init"
+    ],
+    "41": [
+      "src_preprocessing_spatial_join"
+    ],
+    "42": [
+      "src_utils_logging"
+    ],
+    "43": [
+      "src_utils_seeds"
+    ],
+    "44": [
+      "src_viz_export"
+    ],
+    "45": [
+      "src_viz_init"
+    ],
+    "46": [
+      "src_viz_maps"
+    ],
+    "47": [
+      "src_viz_posteriors"
+    ],
+    "48": [
+      "tests_init"
+    ],
+    "49": [
+      "tests_test_accessibility"
+    ],
+    "50": [
+      "tests_test_gtfs_loader"
+    ],
+    "51": [
+      "tests_test_metrics"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07092198581560284,
+    "1": 0.10188261351052048,
+    "2": 0.05714285714285714,
+    "3": 0.058823529411764705,
+    "4": 0.11491935483870967,
+    "5": 0.11290322580645161,
+    "6": 0.07407407407407407,
+    "7": 0.11692307692307692,
+    "8": 0.20333333333333334,
+    "9": 0.16205533596837945,
+    "10": 0.16993464052287582,
+    "11": 0.22727272727272727,
+    "12": 0.25,
+    "13": 0.4,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "app_src_components_tractpanel_tractpanel_tractpanel",
+      "label": "TractPanel()",
+      "degree": 13
+    },
+    {
+      "id": "scripts_nb04_export_diagnostics_main",
+      "label": "main()",
+      "degree": 13
+    },
+    {
+      "id": "app_src_lib_formatters_fmtpct2",
+      "label": "fmtPct2()",
+      "degree": 11
+    },
+    {
+      "id": "scripts_download_data_download_file",
+      "label": "download_file()",
+      "degree": 8
+    },
+    {
+      "id": "scripts_download_data_download_gtfs",
+      "label": "download_gtfs()",
+      "degree": 8
+    },
+    {
+      "id": "scripts_download_data_main",
+      "label": "main()",
+      "degree": 8
+    },
+    {
+      "id": "src_modeling_spatial_adjacency_from_queen",
+      "label": "adjacency_from_queen()",
+      "degree": 8
+    },
+    {
+      "id": "scripts_nb04_export_diagnostics_write_sampling_meta",
+      "label": "write_sampling_meta()",
+      "degree": 8
+    },
+    {
+      "id": "app_src_lib_kde_computekde",
+      "label": "computeKDE()",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "main()",
+      "target": "load_merged_config()",
+      "source_files": [
+        "scripts/extract_osm_pbf.py",
+        "src/utils/config.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "main()",
+      "target": "find_osmium_executable()",
+      "source_files": [
+        "scripts/extract_osm_pbf.py",
+        "src/utils/paths.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "TransitMap()",
+      "target": "fmtPct2()",
+      "source_files": [
+        "app/src/components/Map/TransitMap.tsx",
+        "app/src/lib/formatters.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "InterventionDiff()",
+      "target": "fmtPct2()",
+      "source_files": [
+        "app/src/components/TractPanel/InterventionDiff.tsx",
+        "app/src/lib/formatters.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "GeoDataState",
+      "target": "Metadata",
+      "source_files": [
+        "app/src/hooks/useGeoData.ts",
+        "app/src/types/index.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `Community 2` to `Community 3`?",
+      "why": "High betweenness centrality (0.020) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Bin`, `Props`, `Props` to the rest of the system?",
+      "why": "98 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07092198581560284 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10188261351052048 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 4` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11491935483870967 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

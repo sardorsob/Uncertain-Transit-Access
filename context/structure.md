@@ -16,6 +16,12 @@ BayesTransitEquity/
 ├── CHANGELOG.md                      Milestones
 ├── requirements.txt                  Python dependencies
 ├── .gitignore
+├── .graphifyignore                  Graphify extraction ignore rules
+├── AGENTS.md                         Agent entry point + Graphify routing rules
+├── graphify-out/                     Code knowledge graph for bounded repo navigation
+│   ├── graph.json                    Query with `graphify query`, `path`, or `explain`
+│   ├── GRAPH_REPORT.md               Broad architecture report; read only when needed
+│   └── graph.html                    Local visual graph
 │
 ├── context/                          Long-running memory for AI + human
 │   ├── AGENT.md                      Read first in every new session

@@ -16,6 +16,7 @@ claude/
 
 # Tool caches (e.g. OSMnx / download caches)
 cache/
+graphify-out/cache/
 
 # Large artifacts — keep run logs, ignore heavy model files
 artifacts/models/

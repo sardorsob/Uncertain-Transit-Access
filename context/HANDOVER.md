@@ -73,13 +73,18 @@ Notes:
 
 ## Important Local Workflow Files
 
+- `AGENTS.md`
 - `context/PROJECT.md`
 - `context/SCOPE.md`
 - `context/TASKS.md`
 - `context/AGENTS.md`
 - `context/HANDOVER.md`
+- `graphify-out/graph.json`
+- `graphify-out/GRAPH_REPORT.md`
 
-These files are ignored by Git through `context/`.
+The `context/` files are local workflow state unless Sardor explicitly asks to publish them. `AGENTS.md` and `graphify-out/` are tracked so future agents can navigate the repo cheaply.
+
+Graphify is enabled for bounded repository retrieval. Use `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"` before broad source browsing when `graphify-out/graph.json` exists. After meaningful code changes, run `graphify update .`.
 
 ## Important Existing Context
 
