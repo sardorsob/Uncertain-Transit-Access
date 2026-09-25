@@ -53,7 +53,7 @@ well-behaved when distributions don't overlap.
 | Layer | Tool | Reason |
 |---|---|---|
 | Accessibility computation | r5py (Python wrapper for Conveyal R5) | Built for city-to-regional scale, GTFS-native |
-| Bayesian modeling | PyMC (MCMC) → NumPyro (if scale demands) | PyMC for SD, swap sampler if CA/national |
+| Bayesian modeling | PyMC for the current SD model | Scalable inference is under evaluation; see `MODELING_NOTES.md`. NumPyro NUTS is still MCMC. |
 | Spatial modeling | CAR or BYM spatial random effects in PyMC | Standard for areal data |
 | Geospatial | geopandas, pyproj | Universal, scales to national |
 | Census data | censusdatadownloader or Census API | Tract-level, works nationally |
@@ -103,17 +103,19 @@ and the Next.js app. The frontend never touches raw data or posterior samples di
 
 ## Scalability Design (Critical)
 
-The project starts with San Diego but is architected to scale to California and eventually
-the whole US. What makes this possible:
+The intended path is San Diego -> California pilots -> U.S. coverage. Expansion
+requires measured routing, spatial-memory, inference, and frontend budgets.
 
-- **Everything geographic is in configs/** — bounding box, GTFS agency IDs, census FIPS codes,
-  accessibility thresholds. `src/` and `scripts/` contain zero hardcoded geography.
-- **City config pattern**: `configs/san_diego.yaml` is the template. Adding California = new config
-  + updated GTFS agency list + bigger compute job (variational inference instead of full MCMC).
-- **GTFS via Mobility Database** — national aggregator, so multi-agency ingestion is config-driven.
-- **Deck.gl + PMTiles** — frontend stack handles national-scale data without choking.
-- SD → CA: medium effort (GTFS aggregation + VI instead of MCMC for 8k tracts).
-- CA → National: significant data engineering but no modeling rewrite (~74k tracts, NumPyro).
+- **Config-driven geography is the target.** `configs/san_diego.yaml` is the
+  template, but fixed San Diego values remain in the exporter (`PLATFORM_PLAN.md`).
+- **Inference is not selected for scale.** Compare MCMC, VI/ADVI, and INLA with
+  equivalent model targets and uncertainty QA (`MODELING_NOTES.md`).
+- **Spatial code needs scale work.** Dense adjacency and matrix inversion remain
+  in `src/modeling/spatial.py`; switching inference engines alone is insufficient.
+- **Regional coverage and model partitions need validation.** Preserve cross-border
+  travel and spatial dependence; a sampler swap is not proof of national feasibility.
+- **Frontend releases stay precomputed.** Regional files or tiles are future
+  responses to measured rendering/payload limits, not verified national capacity.
 
 ---
 
@@ -162,7 +164,7 @@ Full rationale in `DECISIONS.md`. Summary:
 - Wasserstein distance preferred over KL/JS for neighborhood comparisons.
 - Exceedance probability P(accessibility < threshold) is the primary map layer.
 - r5py over custom routing — handles GTFS natively at scale.
-- PyMC first, NumPyro if performance demands it at larger scale.
+- PyMC for the current model; scalable alternatives require the benchmark in `MODELING_NOTES.md`.
 - EDA under `notebooks/eda/` vs pipeline 01–07 at `notebooks/` root (D008).
 
 ---
@@ -170,6 +172,10 @@ Full rationale in `DECISIONS.md`. Summary:
 ## Current Status
 
 See `context/STATUS.md` for up-to-date progress.
+For refresh cadence, pipeline automation, release provenance, or U.S. expansion planning,
+read `context/PLATFORM_PLAN.md` first. It separates current capabilities from proposed work.
+For inference choice, MCMC diagnostics, spatial scaling, or approximation benchmarks,
+read `context/MODELING_NOTES.md`; it records candidates and unresolved model-equivalence checks.
 See `context/PAPER.md` for paper argument and figure plan.
 See `DECISIONS.md` for all architectural decisions with rationale.
 See `ASSUMPTIONS.md` for all modeling and data assumptions.

@@ -4,6 +4,26 @@ Format: decision → alternatives considered → rationale → consequences.
 
 ---
 
+## D014 - Versioned regional releases with input-driven refreshes
+**Date**: 2026-09-23
+**Status**: Lightweight direction accepted for planning; detailed cadence and implementation remain proposed.
+**Decision**: Extend D002's precomputed application through reproducible regional
+releases, California pilots, and eventual U.S. coverage. Review source changes
+before recomputing dependent stages. Use `PLATFORM_PLAN.md` as the planning reference.
+**Alternatives**: Manual unversioned snapshots; unconditional full quarterly runs;
+a continuously running global platform.
+**Rationale**: Stable tract geography does not guarantee stable schedules or
+opportunities. Dated releases support useful analysis while limiting unnecessary
+compute and preserving reproducibility.
+**Consequences**: Proposed annual baseline reviews, quarterly lightweight source
+checks, and event-driven reruns; this is not a promise of continuously current
+coverage. DuckDB is optional pending scale measurements. First establish an
+explicit San Diego release, archived inputs, and export QA. No scheduler or
+new compute was launched by this decision. Historical comparisons must control
+for geography, thresholds, model versions, and spatial dependencies.
+
+---
+
 ## D001 — Start with San Diego, not California
 **Date**: 2026-03-28
 **Decision**: Phase 1 is San Diego only (~400 census tracts, 2 GTFS agencies).
@@ -20,7 +40,8 @@ better ability to sanity-check results against known neighborhoods.
 **Alternatives**: FastAPI backend on Render/Railway running inference on demand.
 **Rationale**: Simpler deployment, free to host, faster frontend, no cold-start issues.
 **Consequences**: Map data is not real-time. Updating requires re-running the pipeline
-and redeploying. Acceptable for a planning tool (transit data changes infrequently).
+and redeploying. Releases are dated planning snapshots; D014 clarifies refresh
+policy and avoids assuming stable geography means unchanged transit service.
 
 ---
 

@@ -4,6 +4,24 @@ Current state of the project. Updated at the end of every meaningful work sessio
 ---
 
 ## Current Phase
+
+**Inference brainstorming, 2026-09-23:** `MODELING_NOTES.md` records VI/ADVI,
+INLA, accelerated MCMC, sparse spatial computation, and benchmark/product ideas.
+Confirmed that nb04 uses fixed-length NUTS sampling with ADVI initialization;
+R-hat <= 1.01 is a post-fit diagnostic, not an automatic stopping rule. Dense
+adjacency/inversion and spatial-prior equivalence need attention before scaling.
+No inference implementation, benchmark, or model run was performed.
+
+**Planning update, 2026-09-23:** Initial platform/refresh plan recorded in
+`context/PLATFORM_PLAN.md`: versioned regional releases, proposed annual baseline
+reviews and quarterly source checks, California pilots toward U.S. coverage.
+Planning only; no scheduler, data pull, model run, or application change.
+Source inspection confirms `scripts/run_pipeline.py` and `scripts/run_model.py`
+are empty, and the exporter still has fixed San Diego inputs/summary values.
+Next platform milestone is a reproducible San Diego release with explicit inputs.
+The historical notebook-completion status below is not evidence of unattended
+pipeline readiness; F029's validation limitations still apply.
+
 **Phase 4 — All pipeline notebooks complete; ready for paper writing + dashboard frontend** — nb04 (`fit_raw_zscore_x`), nb05 (all 23 cells, all 7 paper figures), nb06 (all 11 sections, equity decomposition + model validation), and **nb07 (intervention simulation, all 10 sections) are finished and production-ready**. All 9 paper figures exist (Fig 1 — study area, Fig 2 — deterministic access, Figs 3–8 — Bayesian posteriors + Wasserstein, Fig 9 — intervention effect). Next step: write paper sections using F020 / F024–F031 findings, and wire `data/processed/geojson/*` into the Next.js dashboard.
 
 ## What Is Done

@@ -2,10 +2,11 @@
 
 ## Phase
 
-- Current: 0-Planning / California-scale expansion scope
-- Last updated: 2026-06-20
+- Current: 0-Planning / regional releases and California pilots toward U.S. coverage
+- Last updated: 2026-09-23
 - Active task: TASK-001
-- Blockers: Scope is still draft until Sardor approves the first California expansion plan.
+- Open: Detailed California scope, pilot selection, and implementation tasks remain draft.
+- Planning reference: `context/PLATFORM_PLAN.md` (D014); lightweight refresh direction accepted, detailed design proposed.
 
 ## Project Summary
 
@@ -13,7 +14,7 @@
 - Owner: Sardor Sobirov
 - Audience: transit planners, regional/state transportation agencies, equity analysts, academic reviewers, and public-interest researchers.
 - Decision or question supported: how transit accessibility equity decisions change when deterministic tract scores are replaced with uncertainty-aware risk, ambiguity, and intervention-responsiveness estimates.
-- Smallest useful deliverable: a reproducible California pilot that compares deterministic accessibility, probabilistic transit-desert risk, and intervention priority for multiple representative regions.
+- Next platform deliverable: one reproducible San Diego release with explicit input provenance, then California pilots comparing access, uncertainty, and interventions.
 
 ## Core Premise
 
@@ -37,7 +38,7 @@ The paper contribution should be framed around threshold politics, uncertainty, 
 | Data card | pending | Statewide GTFS, ACS, TIGER, LODES, OSM inventory not yet audited. |
 | EDA / data audit | pending | Must precede statewide modeling. |
 | Deterministic baseline | pending | Needed before probabilistic layer. |
-| Modeling strategy | draft | Recommended: approximate statewide inference plus MCMC validation slices. |
+| Modeling strategy | draft | `MODELING_NOTES.md`: compare VI/ADVI and INLA against MCMC; check spatial scaling and prior equivalence first. |
 | Evaluation / QA | pending | Must include approximation-vs-MCMC calibration. |
 | Visualization app | draft | Needs scale-aware state/region/county/tract flow. |
 | Handover | pending | Will be updated after each completed phase. |
@@ -64,9 +65,13 @@ The paper contribution should be framed around threshold politics, uncertainty, 
 
 ## Last Session
 
-- Date: 2026-06-20
-- AI tools used: Codex, GitHub connector, Sardor agentic workflow repo reference, brainstorming skill.
-- Shipped: Local workflow shell under `context/`; initial California expansion planning underway.
-- Verified: `context/` ignored by Git; no workflow files will push unless explicitly force-added.
-- Blockers: Need Sardor approval on draft scope before implementation tasks begin.
-- Next: Review `context/SCOPE.md` and `context/TASKS.md`; revise into approved plan.
+- Date: 2026-09-23
+- Work: Initial `PLATFORM_PLAN.md`, D014, and `MODELING_NOTES.md` inference
+  exploration; planning only. No inference backend selected or benchmark executed.
+- Evidence: Graphify query and targeted source reads; both runner scripts are
+  empty, downloads have provenance but no content-aware refresh detector, and
+  frontend export has fixed San Diego values. GTFS/Census/DuckDB references are
+  linked in the plan. `git ls-files context` confirms existing context docs are tracked.
+- Open: Freshness promise, pilot selection, threshold policy, model partitions,
+  and measured compute budget.
+- Next: Scope one versioned San Diego release and its QA before adding automation.

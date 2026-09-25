@@ -1,5 +1,13 @@
 # TASKS
 
+## Planning Update - 2026-09-23
+
+`PLATFORM_PLAN.md` adds the refresh/product direction under D014. Start with an
+explicit-input San Diego release, then manual refresh QA, California pilots,
+and U.S. rollout. Implementation tasks for release provenance and refresh checks
+are not yet scoped. Existing task statuses/counts below are unchanged; this
+planning pass does not complete TASK-001 or authorize statewide data pulls.
+
 ## Build Progress
 
 | Status | Count |
@@ -44,6 +52,7 @@ Legal transitions:
 - Depends on: none
 - Assigned agent: Builder + QA: Sardor and Codex
 - Contract refs: `context/SCOPE.md`, `context/PROJECT.md`, `context/PROJECT_BRIEF.md`, `context/PAPER.md`
+- Planning reference: `context/PLATFORM_PLAN.md` (D014), including regional releases before automation.
 - Data refs: none
 - Scientific refs: San Diego findings F020, F027, F028, F029, F030, F031
 - User value / decision value: Establish the statewide expansion as a policy-relevant uncertainty framework before investing in data pulls or long compute.
@@ -73,11 +82,16 @@ Legal transitions:
 - Manual QA:
   - Sardor reads scope and flags missing/incorrect strategic assumptions.
 - QA notes:
-  - pending
+  - 2026-09-23 documentation QA: plan checked against source files and existing
+    contracts; local Markdown links and all eight context pointers verified;
+    `git diff --check` passed. Planning only, so no pipeline/app tests run.
+    Full TASK-001 scope review remains pending.
 - Attempts: 1
 - Max attempts: 3
 - Attempt log:
   - 2026-06-20: Drafted initial California expansion scope and task breakdown.
+  - 2026-09-23: Added initial platform/refresh plan and aligned scope with the U.S.
+    goal. Detailed California scope and implementation tasks remain open.
 - Status: in-progress
 
 ## TASK-002
@@ -293,6 +307,8 @@ Legal transitions:
 
 - Phase: modeling
 - Title: Define statewide probabilistic estimands and candidate model family
+- Design exploration: `context/MODELING_NOTES.md` (2026-09-23); candidate tradeoffs
+  and validation proposal only. Statewide target and method remain unselected.
 - Depends on: TASK-001, TASK-006
 - Assigned agent: Builder + QA: Sardor and Codex
 - Contract refs: `context/SCOPE.md`, `context/RISKS.md`
@@ -334,6 +350,8 @@ Legal transitions:
 
 - Phase: modeling
 - Title: Benchmark approximate inference against MCMC validation slices
+- Benchmark reference: `context/MODELING_NOTES.md`; check model/prior equivalence,
+  sparse spatial feasibility, and probability/interval fidelity before promotion.
 - Depends on: TASK-005, TASK-007
 - Assigned agent: Builder
 - Contract refs: `context/RISKS.md`, `context/FINDINGS.md`

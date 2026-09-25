@@ -2,7 +2,14 @@
 
 ## Current Intent
 
-Expand BayesTransitEquity from a San Diego-focused Bayesian transit equity pipeline into a California-scale workflow.
+Expand BayesTransitEquity from a San Diego-focused Bayesian transit equity pipeline
+through California pilots toward a U.S. application. California remains the next
+geographic validation stage; statewide implementation details below remain draft.
+
+The 2026-09-23 product/refresh direction is recorded in `PLATFORM_PLAN.md` (D014):
+dated regional releases, explicit provenance, and input-driven recomputation.
+Start by making a San Diego release reproducible before automating refreshes.
+This planning update does not approve statewide data pulls or choose a sampler.
 
 The purpose is not merely to make a bigger map. The purpose is to build a decision-support framework for uncertainty-aware transit equity planning, where accessibility estimates become policy-relevant probability statements rather than brittle binary tract labels.
 
@@ -34,7 +41,7 @@ The statewide version should answer:
 
 ## Long-Run Product
 
-A California-scale transit equity pipeline and map that can support:
+A U.S. transit equity application, validated first through California, that can support:
 
 - academic paper writing
 - policy-facing visualization
@@ -105,12 +112,16 @@ Produce tract-level deterministic accessibility first. This creates:
 
 ### Stage 4: Scalable Probabilistic Layer
 
+The 2026-09-23 design exploration in `MODELING_NOTES.md` compares MCMC, VI/ADVI,
+and INLA, records dense spatial bottlenecks and prior-equivalence checks, and
+defines a proposed benchmark. No production inference method is selected.
+
 Compare candidate inference families:
 
 - empirical Bayes / shrinkage model for fast statewide tract risk
 - conjugate or semi-conjugate model where assumptions are acceptable
 - Laplace or INLA-like approximation for latent Gaussian spatial models
-- variational inference for full probabilistic approximation
+- variational inference for a posterior approximation, with explicit dependence and dispersion checks
 - MCMC on selected regions for calibration
 
 The estimand matters more than the sampler. The statewide model should preserve policy-relevant uncertainty, not blindly replicate the San Diego PyMC implementation.
