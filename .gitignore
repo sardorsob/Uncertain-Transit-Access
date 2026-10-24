@@ -54,3 +54,6 @@ api_keys.yaml
 .vscode/
 .idea/
 *.swp
+
+# Agent working context and plans stay local (see README)
+/context/
